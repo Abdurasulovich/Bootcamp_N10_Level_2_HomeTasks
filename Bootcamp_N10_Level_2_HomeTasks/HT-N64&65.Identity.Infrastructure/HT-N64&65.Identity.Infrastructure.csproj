@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>HT_N64_65.Identity.Infrastructure</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HT-64&amp;65.Identity.Application\HT-64&amp;65.Identity.Application.csproj" />
+    <ProjectReference Include="..\HT-N64&amp;65.Identity.Domain\HT-N64&amp;65.Identity.Domain.csproj" />
+    <ProjectReference Include="..\HT-N64&amp;65.Identity.Persistance\HT-N64&amp;65.Identity.Persistance.csproj" />
+  </ItemGroup>
+
+</Project>
